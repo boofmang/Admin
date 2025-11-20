@@ -13,7 +13,14 @@
   border: none;
   align-self: center;
 }
+.logo{
+    height: 80px;
+    width: 80px;
+    border:none;
+    margin-left: 20px;
+    align-self: flex-start;
 
+}
 button{
     background-color: rgb(76, 195, 235);
     border: none;
@@ -22,10 +29,9 @@ button{
     border-radius: 20px;
     height: 50px;
     width: 100px;
-    font-size: large;
-
-   
+    font-size: large;  
 }
+
 .image{
     height: 80px;
     width: 80px;
@@ -33,14 +39,39 @@ button{
     align-self: center;
     margin-left: 20px;
 }
+ p{
+    height: fit-content;
+ }
 .container{
    
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 0.6fr 2fr 1fr;
     grid-template-rows: 1fr 5fr;
     grid-auto-flow: dense;
+    height: 100vh;
+
+}
+.projects{
+    grid-template-rows: 0.3fr 4fr;
+    margin-top: 20px;
+}
+.cards{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: -65px;
 }
 
+
+.card{
+    display: grid;
+    width: 300px;
+    height: 200px;
+
+}
 .header{
     grid-template-rows: 1fr 2fr;
     grid-column: 2/4;
@@ -90,9 +121,30 @@ input{
 
 .sidebar{
     grid-row: 1/3;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    gap: 50px;
+}
+.list1, .list2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.item1, .item2{
+    display: flex;
+    gap: 10%;
+}
+.dashlogo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 40px; 
+    margin-top: 20px;
+    margin-right: 25px;
+    height: fit-content;
 }
 
-    
+
 .projects, .rightside{
     grid-row: 2/3;
 }
