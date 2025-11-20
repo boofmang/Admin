@@ -1,10 +1,40 @@
 *{
     box-sizing: border-box;
     border: 1px solid black;
+    margin: 0;
+}
+ div{
+    display: grid;
+ }
+
+ img{
+  height: 30px;
+  width: 30px;
+  border: none;
+  align-self: center;
 }
 
+button{
+    background-color: rgb(76, 195, 235);
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    height: 50px;
+    width: 100px;
+    font-size: large;
+
+   
+}
+.image{
+    height: 80px;
+    width: 80px;
+    border:none;
+    align-self: center;
+    margin-left: 20px;
+}
 .container{
-    height: 100dvh;
+   
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 5fr;
@@ -12,16 +42,57 @@
 }
 
 .header{
+    grid-template-rows: 1fr 2fr;
     grid-column: 2/4;
+}
+
+.linkhold{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+    margin-right: 50px;
+}
+.nameholder{
+grid-template-columns: 1fr 1fr 5fr;
+}
+.userhold{
+    display: block;
+    width: 500px;
+    align-content: center;
+    
+    
+}
+.icons{
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+    width: 50%;
+    margin-right: 50px;
+    align-items: center;
+}
+input{
+    border: none;
+    background-color: lightgrey;
+    border-radius: 20px;
+    height: 60%;
+    align-self: center;
+    width: 45%;
+}
+.searchbar{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 50px;
 }
 
 .sidebar{
     grid-row: 1/3;
 }
 
-.header{
     
-}
 .projects, .rightside{
     grid-row: 2/3;
 }
