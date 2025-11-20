@@ -1,3 +1,27 @@
 *{
     box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.container{
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-auto-flow: dense;
+}
+
+.header{
+    grid-column: 2/4;
+}
+
+.sidebar{
+    grid-row: 1/3;
+}
+
+.header{
+    
+}
+.projects, .rightside{
+    grid-row: 2/3;
 }
